@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="X-Value"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Y-Value"
+            android:layout_gravity="start"/>
+        <EditText
+            android:id="@+id/y"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType = "numberSigned"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:shadowColor="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <ProgressBar
+            android:id="@+id/prog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:indeterminateTint="#56CF3E"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Submitted"
+            android:textColor="#56CF3E"
+            android:visibility="gone"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
