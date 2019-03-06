@@ -22,11 +22,13 @@ import java.util.UUID;
 public class CoordinatesActivity extends AppCompatActivity {
     EditText xText;
     EditText yText;
+    EditText zText;
     Button submit;
     ProgressBar prog;
     TextView sub;
     String xString;
     String yString;
+    String zString;
     String address = null;
     BluetoothAdapter myBluetooth = null;
     BluetoothSocket btSocket = null;
@@ -43,6 +45,7 @@ public class CoordinatesActivity extends AppCompatActivity {
         submit = findViewById(R.id.button);
         xText = findViewById(R.id.x);
         yText = findViewById(R.id.y);
+        zText = findViewById(R.id.z);
         prog = findViewById(R.id.prog);
         sub = findViewById(R.id.sub);
         new ConnectBT().execute();
@@ -51,15 +54,16 @@ public class CoordinatesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 xString = xText.getText().toString();
                 yString = yText.getText().toString();
+                zString = zText.getText().toString();
                 prog.setVisibility(View.VISIBLE);
-                if(xString.isEmpty() || yString.isEmpty()){
-                    Toast.makeText(CoordinatesActivity.this,"Please, Enter X,Y Coordinates",Toast.LENGTH_SHORT).show();
+                if(xString.isEmpty() || yString.isEmpty() || zString.isEmpty()){
+                    Toast.makeText(CoordinatesActivity.this,"Please, Enter X,Y,Z Coordinates",Toast.LENGTH_SHORT).show();
                 }else {
                     if (btSocket!=null)
                     {
                         try
                         {
-                            byte[] bytesData =  (xString +"," + yString).getBytes();
+                            byte[] bytesData =  (xString +"," + yString +"," + zString).getBytes();
                             String decodedData = new String(bytesData);
                             Log.v("Prisca",decodedData);
 
