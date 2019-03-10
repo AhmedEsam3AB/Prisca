@@ -63,7 +63,7 @@ public class CoordinatesActivity extends AppCompatActivity {
                     {
                         try
                         {
-                            byte[] bytesData =  (xString +"," + yString +"," + zString).getBytes();
+                            byte[] bytesData =  (xString +"," + yString +"," + zString + ";").getBytes();
                             String decodedData = new String(bytesData);
                             Log.v("Prisca",decodedData);
 
