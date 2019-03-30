@@ -30,9 +30,7 @@ int third_value (char* String)
 	char h [length];
 	for (i=0;i< length;i++)
 	{
-		if (String [i] == '-'){
-			
-		}
+		if (String [i] == '-')
 		break;
 	}
 	for (j=0;j<length;j++)
