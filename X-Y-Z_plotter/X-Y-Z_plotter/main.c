@@ -146,7 +146,7 @@ int main(void)
 		}
 		posx = x;
 		posy = y;
-		posy = z;
+		posz = z;
 		
 		x = 0.0;
 		y = 0.0;
