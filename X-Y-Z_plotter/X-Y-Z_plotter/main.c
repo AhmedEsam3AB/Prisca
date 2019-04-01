@@ -49,16 +49,19 @@ int main(void)
 		value_2 = second_value (String); //call function to extract second value
 		value_3 = third_value (String); //call function to extract third value
 
-				if (!(value_1>250||value_2>250||value_3>250||value_1<0||value_2<0||value_3<0)) // if the values don't skip the plate ,use it
+		
+		if (!(value_1>250||value_2>250||value_3>250||value_1<0||value_2<0||value_3<0)) // if the values don't skip the plate ,use it
+
 		{
 			x = sub_function (&old_val_1, value_1);     //call function to extract first step
 			y = sub_function (&old_val_2, value_2);    //call function to extract second step
-			z = sub_function (&old_val_3, value_3);    //call function to extract second step
+			z = sub_function (&old_val_3, value_3);    //call function to extract third step
   			value_1 = 0;
   			value_2 = 0;
 			value_3 = 0;
 			 
-		}		
+		}
+		
 		if (x < 0 ){ // if the distance give a negative number make it positive and change the direction of motor rotation
 			x *=-1;
 			statusx = 1;
