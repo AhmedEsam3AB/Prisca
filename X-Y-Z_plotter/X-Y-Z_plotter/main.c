@@ -1,5 +1,5 @@
 /*
- * X-Y_plotter.c
+ * X-Y-Z_plotter.c
  *
  * Created: 09/03/2019 08:14:08 PM
  * Author : PRISCA
