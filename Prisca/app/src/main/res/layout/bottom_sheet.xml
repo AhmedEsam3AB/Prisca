@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="20dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+<TextView
+    android:id="@+id/rec"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Submitted"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:textSize="21sp"
+    android:gravity="center"
+    android:background="#56CF3E"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="Old Position"
+    android:textColor="@color/colorPrimary"
+    android:textSize="21sp"
+    android:textStyle="bold"/>
+<TextView
+        android:id="@+id/oldpos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="( 0 , 0 , 0 )"
+        android:textColor="@color/colorPrimary"
+        android:textSize="21sp" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="New Position"
+        android:textColor="#56CF3E"
+        android:textSize="21sp"
+        android:textStyle="bold"/>
+<TextView
+        android:id="@+id/newpos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="( 0 , 0 , 0 )"
+        android:textColor="#56CF3E"
+        android:textSize="21sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Displacement"
+        android:textColor="@color/colorPrimary"
+        android:textSize="21sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="( 0 , 0 , 0 )"
+        android:textColor="@color/colorPrimary"
+        android:textSize="21sp"
+        android:layout_marginBottom="10dp"/>
+<Button
+    android:id="@+id/button2"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded"
+    android:shadowColor="@color/colorPrimary"
+    android:text="Finish"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    android:layout_gravity="center_horizontal"
+    android:clickable="false"/>
+
+
+</LinearLayout>
