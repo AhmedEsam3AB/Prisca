@@ -105,8 +105,11 @@ public class CoordinatesActivity extends AppCompatActivity {
                     yString = yOld;
                     zString = zOld;
 
-                } else if (x > 30 || y > 30 || z > 50) {
+                } else if (x > 30 || y > 30 || z > 50 || x < -30 || y < -30 || z < -50) {
                     Toast.makeText(CoordinatesActivity.this, "Out of 30x30x50cm range", Toast.LENGTH_SHORT).show();
+                    xString = xOld;
+                    yString = yOld;
+                    zString = zOld;
 
                 } else {
                     if (btSocket != null) {
